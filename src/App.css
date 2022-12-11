@@ -1,10 +1,60 @@
+html {
+  color: #000;
+    background-color: #fff;
+}
+
+.Panel{
+  width : 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
 .App {
   text-align: center;
+  /*background-color: #282c34;*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+ul {
+  display : grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+li {
+  display : flex;
+
+  color : white;
+  font-size : 1.5em;
+  font-weight: bold;
+    list-style-type: none;
+    padding: 1em;
+  border : 1px solid white;
+  border-collapse: collapse;
+  filter : blur(1em);
+    background-color: #0099cc;
+    justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +64,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +79,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+
+.MasProximo {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+  background-color: #0099cc;
+    color: white;
+    padding: 8px 16px;
+  filter : blur(0.25em);
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ThemasLi {
+  filter : blur(0);
+  border : 1px solid white;
 }
