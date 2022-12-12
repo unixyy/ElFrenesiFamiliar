@@ -40,7 +40,7 @@ export default function MasProximo(){
       <h1>Mas Proximo</h1>
         {game.map((question,index) => {
             return (
-              <div className="MasContainer">
+              <div className="question">
                 <h2>{question.getQuestions()}</h2>
                 <p id={index.toString()} className="MasProximo" onClick={() => handleChange(index)}>{question.getAnswers()}</p>
               </div>

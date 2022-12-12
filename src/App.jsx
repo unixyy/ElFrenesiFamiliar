@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Panel from "./Components/Panel";
 import MasProximo from "./Components/MasProximo";
 import Themas from "./Components/Themas";
+import Pub from "./Components/Pub";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       {path: '/panel', element: <Panel/>},
       {path: '/masProximo', element: <MasProximo/>},
       {path: '/themas', element: <Themas/>},
+      {path: '/pub', element: <Pub />}
     ]
   );
 
@@ -25,6 +27,7 @@ function App() {
       <div className="navbar">
         <Button variant="contained" href="panel">Panel</Button>
         <Button variant="contained" href="masProximo">Más Próximo</Button>
+        <Button variant="contained" href="pub">Pub</Button>
         <Button variant="contained" href="themas">Themas</Button>
       </div>
       <RouterProvider router={router} />

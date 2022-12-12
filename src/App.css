@@ -106,3 +106,15 @@ li {
   filter : blur(0);
   border : 1px solid white;
 }
+
+.question {
+  min-height: 100vh;
+}
+
+div > h1 {
+  margin-bottom: 100vh;
+}
+
+.pub {
+  margin-top : 5vh;
+}

@@ -76,12 +76,12 @@ export default function Panel(){
     new Question(
       "¿Cuál es el cemantix del día (en francés)?",
       [
-        "Word",
-        "Word",
-        "Word",
-        "Word",
-        "Word",
-        "Word",
+        "énergétique",
+        "environnemental",
+        "nucléaire",
+        "vital",
+        "développement",
+        "automassage",
       ]
     ),
   ]
@@ -102,13 +102,13 @@ export default function Panel(){
   return (
     <div className="Panel">
       <h1>Panel</h1>
+      {game.map((question) => {
+        return (
+          <div className="question">
       <div className="container">
       <TextField id="search" label="escribe" variant="filled" onChange={handleInputChange}></TextField>
       <Button id="verify" variant="contained" onClick={handleCheck}>Verificar</Button>
       </div>
-      {game.map((question) => {
-        return (
-          <div>
             <h2>{question.getQuestions()}</h2>
             <ul>
             {question.getAnswers().map((answer) => {

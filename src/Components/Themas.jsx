@@ -96,7 +96,7 @@ export default function Themas(){
         <h1>Panel</h1>
         {game.map((question) => {
           return (
-            <div>
+            <div className="question">
               <h2>{question.getQuestions()}</h2>
               <ul>
                 {question.getAnswers().map((answer) => {
